@@ -1,89 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>sobre el mexico</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barra Fixa Superior Funcional</title>
   <style>
-    body {
-      margin: 0;
-      font-family: "Georgia", "Times New Roman", serif;
-      background-color: #19755e;
-      color: #202122;
-      display: flex;
-    }
-
-    nav {
-      width: 240px;
-      background-color: #f8f9fa;
-      border-right: 1px solid #a2a9b1;
-      height: 100vh;
-      padding: 20px;
+    
+    * {
       box-sizing: border-box;
-      position: fixed;
-      overflow-y: auto;
     }
-
-    nav h2 {
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #c8ccd1;
-      padding-bottom: 5px;
+    section {
+  scroll-margin-top: 120px;
     }
-
-    nav a {
-      display: block;
-      padding: 6px 0;
-      color: #0645ad;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
+    body {
+      margin-top: 100px;
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #19755e;
+      color: #202022;
     }
 
     main {
-      margin-left: 260px;
-      padding: 40px 30px;
+      /*margin: 100px auto 0;
       max-width: 900px;
       background-color: white;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-      min-height: 100vh;
-    }
-
-    main h1 {
-      font-size: 28px;
-      border-bottom: 1px solid #a2a9b1;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
       margin-bottom: 20px;
-      padding-bottom: 10px;
+      padding-top: 20px;
     }
-
-    main h2 {
-      font-size: 20px;
-      margin-top: 40px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 4px;
+    
+    nav {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #f8f9fa;
+      border-bottom: 2px solid #a2a9b1;
+      display: flex;
+      align-items: center;
+      padding: 0 40px;
+      gap: 40px; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 3000;
+      margin-bottom: 20px;
+      padding-top: 20px;
     }
-
-    p {
+    nav a {
+      color: #0645ad;
+      font-size: 18px;
+      text-decoration: none;
+      white-space: nowrap;
+      padding: 10px 15px; 
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+    nav a:hover {
+      background-color: #d9e9ff;
+      text-decoration: underline;
+      margin-bottom: 20px;
+      padding-top: 20px;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin-bottom: 200px;
+      padding-top: 120px;
+    }
+    main h1 {
+      margin-top: 10;
+      font-size: 32px;
+      border-bottom: 2px solid #a2a9b1;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    main p {
+      font-size: 18px;
       line-height: 1.6;
-      font-size: 16px;
-      margin: 16px 0;
+      margin-top: 20px;
+      color: #333;
+      margin-bottom: 20px;
+      padding-top: 20px;
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Bandeira do México" width="185">
-    <h2>Sumário</h2>
-    <a href="#inicio">inicio</a>
-    <a href="#Aspectos culturales">Aspectos culturales</a>
-    <a href="#Artistas y arte">Artistas y arte</a>
-    <a href="#Calidad de vida">Calidad de vida</a>
-    <a href="#Puntos turístico">Puntos turísticos</a>
-    <a href="#fuentes-de-investigacion">fuentes de investigación</a>
+    <div class="logo">
+     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Bandeira do México" height="100">
+    </div>
+    <div class="nav-links">
+      <a href="#inicio">inicio</a>
+      <a href="#Aspectos culturales">Aspectos culturales</a>
+      <a href="#Artistas y arte">Artistas y arte</a>
+      <a href="#Calidad de vida">Calidad de vida</a>
+      <a href="#Puntos turístico">Puntos turísticos</a>
+      <a href="#fuentes-de-investigacion">fuentes de investigación</a>
+    </div>
   </nav>
 
   <main>
@@ -159,4 +180,8 @@
 
 </body>
 </html>
+
+</body>
+</html>
+
 
